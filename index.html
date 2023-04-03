@@ -3,30 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manipulation example</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="scripts/script.js" defer></script>
+
 </head>
 
 <body>
-    <header>
+    <header class = "changebgC">
         <h1>Enter student's information</h1>
-        <button>Change Background Color</button>
+        <button id = "bgB">Change Background Color</button>
     </header>
 
-    <section>
+    <section >
+        <div class = "buttonList">
         <label>First Name:</label>
         <input id="firstname" type="text">
         <label>Last Name:</label>
         <input id="lastname" type="text">
         <label>Program Name:</label>
         <input id="progname" type="text">
-        <button>Submit</button>
+        </div>
+        <div class="center">
+        <button class = "submitB">Submit</button>
+        </div>
     </section>
 
     <section>
         <h2>Enrolled students</h2>
-        <ul>Sudents Enrolled in CIT</ul>
-        <ul>Sudents Enrolled in CST</ul>
+        <div class = "enroll">
+        <ul id = "CIT">Sudents Enrolled in <span>CIT</span></ul>
+        <ul id = "CST">Sudents Enrolled in CST</ul>
+        </div>
     </section>
 
 </body>

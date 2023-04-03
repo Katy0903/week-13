@@ -1,3 +1,62 @@
 body {
     background-color: tan;
 }
+
+span{
+    color: palevioletred;
+    font-weight: bold;
+
+}
+.buttonList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 
+.submitB{
+    margin: 0 auto;
+    display: block;
+
+} */
+
+/* or */
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 10px;
+}
+
+
+/* Media query for larger screens */
+/* @media (min-width: 600px) {} */
+@media screen and (min-width: 600px) {
+    
+    .buttonList{
+        display: flex;
+        justify-content: space-evenly;
+
+        margin:20px;
+        /* better using margin than padding between different element */
+    }
+
+    .enroll{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .changebgC{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
